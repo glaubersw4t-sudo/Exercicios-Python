@@ -1,0 +1,11 @@
+salario = float(input('digite: '))
+meses = int(input('digite: '))
+minimo = float(input('digite: '))
+
+if   salario > minimo * 2: 
+ print('sálario maior que 2 sálarios mínimos')
+else:
+ print('você tem direito ao beneficio')
+
+resultado = (minimo / 12) * meses
+print('resultado:' , resultado)
