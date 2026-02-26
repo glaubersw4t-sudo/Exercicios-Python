@@ -1,0 +1,50 @@
+# Solicitando dados
+peso = float(input('Digite seu peso (kg): '))
+idade = int(input('Digite sua idade: '))
+altura = float(input('Digite sua altura (m): '))
+
+# Solicitando o sexo
+while True:
+    sexo = input('Digite seu sexo (M para masculino / F para Feminino): ').strip().upper()
+    if sexo in ['M', 'F']:
+        break
+    else:
+        print('Opção inválida! Digite apenas M ou F.')
+
+# Calculando metabolismo
+if sexo == 'M':
+    resultado = 10 * peso + 6.25 * (altura * 100) - 5 * idade + 5  
+else:
+    resultado = 10 * peso + 6.25 * (altura * 100) - 5 * idade - 161
+
+print(f"Seu metabolismo basal é: {resultado:.2f}")
+
+# Calculando gasto energético
+atividade = input('Com que frequência você pratica atividade? (1 para sedentario / 2 para Leve / 3 para Moderado / 4 para Muito Ativo): ')
+
+if atividade == "1":
+    gasto = resultado * 1.2
+elif atividade == "2":
+    gasto = resultado * 1.375
+elif atividade == "3":
+    gasto = resultado * 1.55
+elif atividade == "4":
+    gasto = resiltado * 1.725
+else:
+    print("Opção inválida! Considerando nível leve.")
+    gasto = resultado * 1.375
+
+print(f"Seu gasto energético diário é: {gasto:.2f}")
+
+# Gasto Calorico diario
+
+get = gasto * 1.375 
+print(get)
+
+#Déficit Calorico
+
+def = get - 500
+print(f'{def:.2f}')
+
+
+
