@@ -1,0 +1,15 @@
+#Dados para o calculo 
+salario =float(input('Digite seu salario: '))
+carga_horaria = int(input('Digite suas horas trabalhadas mensais: '))
+
+resultado = salario / carga_horaria
+print(f'Sua dia de trabalho custa: {resultado:.2f}')
+
+#Calculando o valor do dia
+day = resultado * 8
+print(f'O seu dia trabalhado custa:{day:.2f}')
+
+#Calculando o valor do mês
+
+mes = day * 22
+print(f'O valor do seu mês trabalhado é:{mes:.2f}')
