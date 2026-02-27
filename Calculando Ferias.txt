@@ -1,0 +1,8 @@
+#Calculando o terço do salario
+salario = float(input('Digite o valor do seu salario: '))
+resultado = salario / 3
+print(f'resultado (terço): {resultado:.2f}')
+
+#Calculando Ferias
+ferias = salario + resultado
+print(f'O valor da suas ferias é: {ferias:.2f}')
