@@ -1,0 +1,5 @@
+# Calculando porcentagem
+valor = float(input('Digite o valor: '))
+percentual = int(input('Digite o valor percentual:  '))
+resultado = valor * percentual / 100
+print(f'resultado (porcentagem): {resultado:.2f}')
