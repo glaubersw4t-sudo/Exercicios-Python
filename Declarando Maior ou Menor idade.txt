@@ -1,0 +1,18 @@
+#Declarando Idade
+
+indade = int(input('Digite sua Idade: '))
+ano_nascimento = int(input('Digite seu ano de nascimento: '))
+ano_vingente = int(input('Digite o ano vingente: '))
+
+#Declarando maior ou menor idade
+
+calculo = ano_vingente - ano_nascimento
+print(f'resultado (Maior ou Menor idade): {calculo:.2f}')
+if calculo <= 10:
+    print('Você é uma Criança')
+elif calculo <= 17:
+    print('Você é um Adolescente')
+elif calculo <= 59:
+    print('Você é Adulto')
+else:
+    print('Voce é um Idoso')  
