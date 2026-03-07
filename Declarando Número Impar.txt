@@ -1,0 +1,10 @@
+# Declarando número
+numero = int(input('Por favor digite um número qualquer: '))
+
+# Dividindo por 2
+operacao = numero % 2 
+
+if operacao  > 0 :
+    print('O número declarado é IMPAR')
+else:
+    print('O número declarado é PAR')
